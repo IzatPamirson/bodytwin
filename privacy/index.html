@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Bodytwin</title>
+<meta name="description" content="How Bodytwin: Health Simulator handles your data.">
+<style>
+  :root {
+    --bg: #f6f1e8; --text: #1b1f24; --muted: #5b6168; --rule: #ddd3c3; --link: #1f5f8b; --panel: #ede5d7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121619; --text: #ece7de; --muted: #a8a39a; --rule: #2c3237; --link: #8cc4ec; --panel: #1b2126; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 2.5rem; line-height: 1.15; margin: 0 0 .5rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 .5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .25rem; }
+  p, li { max-width: 65ch; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .25rem 0; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  .meta { color: var(--muted); margin: 0 0 1.5rem; }
+  .summary { background: var(--panel); border-radius: 16px; padding: 1rem 1.25rem; }
+  .summary ul { margin: .5rem 0 0; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .5rem .5rem 0; border-bottom: 1px solid var(--rule); }
+  th { font-weight: 600; }
+  .scroll { overflow-x: auto; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta">Bodytwin: Health Simulator · Effective 24 October 2026</p>
+
+<div class="summary">
+  <strong>In short</strong>
+  <ul>
+    <li>Your twin runs on your iPhone. Data read from Apple Health stays on the phone and is never uploaded as raw records.</li>
+    <li>An account is optional. With one, we store the lab reports you upload, the values read from them and your consent choices, in the EU.</li>
+    <li>Nothing is sent to an AI service until you switch it on, and you can switch it off at any time.</li>
+    <li>We never sell your data, never use it for advertising and never track you across apps.</li>
+    <li>Deleting your account in the app deletes your data from our servers right away.</li>
+  </ul>
+</div>
+
+<h2>Who we are</h2>
+<p>Bodytwin: Health Simulator (“Bodytwin”, “we”) is published by Izat Bekboev, an individual developer, who is the
+controller of the personal data described here. Contact: <a href="mailto:ibekboev@gmail.com">ibekboev@gmail.com</a>.</p>
+
+<h2>Data that stays on your iPhone</h2>
+<p>With your permission, Bodytwin reads Apple Health data such as sleep, heart rate, heart rate variability,
+activity, workouts, body measurements, nutrition, sex and date of birth. The app turns these into the views and
+verdicts you see. These records are processed on the device and are not sent to our servers. Data from Apple Health
+is never used for advertising or marketing, never sold, and never stored in iCloud by us.</p>
+
+<h2>Data we store when you have an account</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th scope="col">What</th><th scope="col">Why</th></tr></thead>
+  <tbody>
+    <tr><td>Account: a user ID, and the email address Sign in with Apple shares (often a private relay address)</td><td>To sign you in and keep your data with your account</td></tr>
+    <tr><td>Lab reports you upload (PDF or photo) and the values read from them, including values you confirm or correct</td><td>To show your blood tests and trends</td></tr>
+    <tr><td>Your consent choices and their dates</td><td>To prove and respect what you agreed to</td></tr>
+    <tr><td>Subscription status and expiry</td><td>To give subscribers access to AI features</td></tr>
+    <tr><td>Counts of AI requests per day and their cost</td><td>To apply daily limits and keep the service affordable</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Photos of reports are re-encoded on your phone before upload, which removes location and camera metadata.</p>
+
+<h2>AI features</h2>
+<p>AI features are optional, need your explicit consent and are part of the subscription. Each has its own switch in
+More → Account, and turning it off stops any further sending.</p>
+<ul>
+  <li><strong>Reading lab reports.</strong> The report you choose is sent to Google’s Gemini API to read its values.</li>
+  <li><strong>Assistant and simulations.</strong> Your question or scenario, a short summary of your twin computed on the
+    phone (for example average sleep, resting heart rate trend, verdicts per area) and your confirmed lab values are sent
+    to Google’s Gemini API. Raw Apple Health records are not sent.</li>
+  <li><strong>Research for simulations.</strong> To check a scenario against published research, the scenario text is
+    used to run Google Search queries. Your health data is not part of those queries. Research notes found for a scenario
+    may be reused for anyone asking the same scenario for up to 30 days; they are stored without any link to you.</li>
+</ul>
+<p>We use Google’s paid Gemini API service. Under its terms Google does not use this data to train its models; it may
+keep it for a limited period to detect abuse. AI answers are general information, not medical advice and not a
+diagnosis.</p>
+
+<h2>Who processes data for us</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th scope="col">Provider</th><th scope="col">Role</th><th scope="col">Location</th></tr></thead>
+  <tbody>
+    <tr><td>Supabase</td><td>Database, file storage, sign-in and server functions</td><td>EU (Ireland)</td></tr>
+    <tr><td>Google (Gemini API, Google Search)</td><td>AI processing and research searches, only after your consent</td><td>Global, including the US</td></tr>
+    <tr><td>RevenueCat</td><td>Subscription management; receives your user ID and purchase records from Apple</td><td>US</td></tr>
+    <tr><td>Apple</td><td>Sign in with Apple, App Store purchases, Apple Health</td><td>Global</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Each provider processes data only to provide its service to us. Transfers outside the EU and UK rely on the
+European Commission’s Standard Contractual Clauses or the EU–US Data Privacy Framework, as offered by each provider.
+We do not see or store your payment details.</p>
+
+<h2>Legal bases (EU and UK)</h2>
+<ul>
+  <li>Health data, including lab reports and anything sent to AI features: your explicit consent (GDPR Art. 9(2)(a) and 6(1)(a)).</li>
+  <li>Your account and subscription: performing our contract with you (Art. 6(1)(b)).</li>
+  <li>Usage limits and preventing abuse: our legitimate interest in a secure, affordable service (Art. 6(1)(f)).</li>
+</ul>
+<p>You can withdraw consent at any time in the app; this does not affect processing that already happened.</p>
+
+<h2>How long we keep data</h2>
+<ul>
+  <li>Account data, lab reports and values: until you delete them or your account.</li>
+  <li>When you delete your account, your records and files are deleted from our database and storage immediately.
+    Encrypted database backups are overwritten within 7 days.</li>
+  <li>Shared research notes: up to 30 days.</li>
+  <li>Your subscription history stays with Apple and RevenueCat as required for purchases and tax. Deleting your
+    account does not cancel a subscription; cancel it in Settings → Apple ID → Subscriptions.</li>
+</ul>
+
+<h2>Your rights</h2>
+<p>You can access, correct, export and delete your data, restrict or object to processing, and withdraw consent.
+Most of this is in the app: lab values can be corrected, a report can be deleted together with its values, AI
+features can be switched off, and your account can be deleted in More → Account. For anything else, write to <a href="mailto:ibekboev@gmail.com">ibekboev@gmail.com</a>; we reply
+within one month. You can also complain to your data protection authority (in the UK, the ICO).</p>
+<p>US residents: we do not sell or share personal information for cross-context behavioural advertising, and we
+treat health data as sensitive data used only to provide the features you ask for.</p>
+
+<h2>Security</h2>
+<p>Data is encrypted in transit and at rest. Every record is readable only by its owner, enforced in the database.
+Keys for AI services are kept on our servers, never in the app.</p>
+
+<h2>Children</h2>
+<p>Bodytwin is not intended for anyone under 18, and we do not knowingly collect their data.</p>
+
+<h2>Changes</h2>
+<p>If we change how we handle data, we will update this page and its date. If a change needs new consent — for
+example a new AI feature or provider — the app will ask before anything is sent.</p>
+
+<footer>© 2026 Izat Bekboev · Bodytwin: Health Simulator</footer>
+</main>
+</body>
+</html>
