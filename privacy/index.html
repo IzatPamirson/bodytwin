@@ -35,7 +35,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Bodytwin: Health Simulator · Effective 24 October 2026</p>
+<p class="meta">Bodytwin: Health Simulator · Effective 31 October 2026</p>
 
 <div class="summary">
   <strong>In short</strong>
@@ -57,6 +57,11 @@ controller of the personal data described here. Contact: <a href="mailto:ibekboe
 activity, workouts, body measurements, nutrition, sex and date of birth. The app turns these into the views and
 verdicts you see. These records are processed on the device and are not sent to our servers. Data from Apple Health
 is never used for advertising or marketing, never sold, and never stored in iCloud by us.</p>
+<p>Bodytwin reads the nutrition data that LogFood AI shares on this device, if “Share with Body Twin” is turned on in
+LogFood: foods, nutrients and supplements from your LogFood diary for the last 180 days. Bodytwin only reads this data
+through a folder on the phone that the two apps share; it never changes or deletes it, keeps a working copy in the
+phone’s cache, and stops using it and removes the copy as soon as you turn sharing off in LogFood. This data is not
+sent to our servers and is never used for advertising.</p>
 
 <h2>Data we store when you have an account</h2>
 <div class="scroll">
@@ -79,8 +84,9 @@ More → Account, and turning it off stops any further sending.</p>
 <ul>
   <li><strong>Reading lab reports.</strong> The report you choose is sent to Google’s Gemini API to read its values.</li>
   <li><strong>Assistant and simulations.</strong> Your question or scenario, a short summary of your twin computed on the
-    phone (for example average sleep, resting heart rate trend, verdicts per area) and your confirmed lab values are sent
-    to Google’s Gemini API. Raw Apple Health records are not sent.</li>
+    phone (for example average sleep, resting heart rate trend, average daily nutrients from Apple Health or LogFood AI,
+    verdicts per area) and your confirmed lab values are sent to Google’s Gemini API. Raw Apple Health records and
+    individual LogFood diary entries are not sent.</li>
   <li><strong>Research for simulations.</strong> To check a scenario against published research, the scenario text is
     used to run Google Search queries. Your health data is not part of those queries. Research notes found for a scenario
     may be reused for anyone asking the same scenario for up to 30 days; they are stored without any link to you.</li>
